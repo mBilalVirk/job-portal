@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import SearchJobs from "./components/searchjob/SearchJobs";
 import Jobs from "./components/jobs/Jobs";
+import Footer from "./components/footer/Footer";
 import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
         </div>
       </section>
       <Jobs />
+      <Footer />
     </>
   );
 }
