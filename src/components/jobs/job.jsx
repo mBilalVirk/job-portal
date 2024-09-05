@@ -1,6 +1,6 @@
 const jobs = [
   {
-    Title: "Seasoned Senior python Developer (fresher",
+    Title: "Seasoned Senior python Developer (fresher)",
     Company: "XYZ Solution Pvt Ltd",
     Experience: "0 - 1 yrs",
     Salary: "RS: 1 lak to 1.5 lak .p a.",
