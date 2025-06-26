@@ -44,17 +44,9 @@ function Jobs() {
                 <p>{job.Experience}</p>
                 <p>{job.Salary}</p>
                 <p>{job.Location}</p>
-                {/* <p>
+                <p>
                   Skills: <small>{job.Skills}</small>
-                </p> */}
-                <p>Skills:</p>
-                {/* Split skills by comma and render each in a separate <p> */}
-                {job.Skills.split(",").map((skill, idx) => (
-                  <small key={idx} className="skill">
-                    {skill.trim()}
-                  </small>
-                ))}
-                <p></p>
+                </p>
                 <p>
                   Description:{" "}
                   <small>
