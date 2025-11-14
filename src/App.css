@@ -172,6 +172,11 @@ h3::before {
   color: #29b929;
 }
 
+/* COMPANIES */
+#companies {
+  margin-top: 10%;
+}
+
 /* site-stats */
 #site-stats {
   padding: 100px 0;
