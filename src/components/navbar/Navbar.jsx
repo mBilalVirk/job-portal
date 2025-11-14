@@ -1,14 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <section id="header  ">
-      <div className="menu-bar ">
-        <nav className="navbar navbar-expand-lg ">
+    <section id="header">
+      <div className="menu-bar">
+        <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/">
               DAILY JOBS ALERTS
-            </a>
+            </Link>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -20,37 +22,48 @@ function Navbar() {
             >
               <span className="navbar-toggler-icon" />
             </button>
+
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li className="nav-item ">
-                  <a className="nav-link active" aria-current="page" href="#">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                {/* ALL JOBS PAGE */}
+                <li className="nav-item">
+                  <Link className="nav-link" to="/">
                     ALL JOBS
-                  </a>
+                  </Link>
                 </li>
+
+                {/* COMPANIES PAGE */}
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/companies">
                     COMPANIES
-                  </a>
+                  </Link>
                 </li>
+
+                {/* WALK-IN PAGE */}
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/walkin">
                     WALK-IN
-                  </a>
+                  </Link>
                 </li>
+
+                {/* GOVT JOBS PAGE */}
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/govtjobs">
                     GOVT. JOBS
-                  </a>
+                  </Link>
                 </li>
+
+                {/* INTERNSHIP PAGE */}
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    INTERSHIP
-                  </a>
+                  <Link className="nav-link" to="/internships">
+                    INTERNSHIP
+                  </Link>
                 </li>
               </ul>
+
               <form className="d-flex" role="search">
                 <input
                   className="form-control me-2"
@@ -66,9 +79,10 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <div className="banner text-center ">
+
+      <div className="banner text-center">
         <h1>JOBS AROUND YOU</h1>
-        <p>Subsribe Jobs portal for new updates</p>
+        <p>Subscribe Jobs portal for new updates</p>
       </div>
     </section>
   );
