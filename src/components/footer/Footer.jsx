@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="#">About Us</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to="/contactus">Contact Us</Link>
             </li>
           </ul>
         </div>

@@ -5,6 +5,7 @@ import SearchJobs from "./components/searchjob/SearchJobs";
 import Jobs from "./components/jobs/Jobs";
 import Companies from "./components/companies/companies";
 import Footer from "./components/footer/Footer";
+import ContactUs from "./components/contactus/contactus";
 import "./App.css";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 
         {/* Companies Page */}
         <Route path="/companies" element={<Companies />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
 
       <Footer />
