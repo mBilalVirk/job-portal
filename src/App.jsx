@@ -12,13 +12,15 @@ import Companies from "./components/companies/companies";
 import Footer from "./components/footer/Footer";
 import ContactUs from "./components/contactus/contactus";
 import Signin from "./components/signin/signin";
+import Signup from "./components/signin/sigup";
 import "./App.css";
 
 function Layout({ children }) {
   const location = useLocation();
 
   // hide navbar & footer only on /signin page
-  const hideLayout = location.pathname === "/signin";
+  const hideLayout =
+    location.pathname === "/signin" || location.pathname === "/signup";
 
   return (
     <>
@@ -55,6 +57,7 @@ function App() {
 
           {/* Signin Page — only Signin appears */}
           <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </Layout>
     </Router>
