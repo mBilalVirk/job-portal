@@ -32,8 +32,9 @@ function Jobs() {
   return (
     <>
       {/* Your existing JSX code */}
-      <section id="jobs">
-        <div className="container">
+      <section className="container">
+        <div id="jobs">
+          <h3>TOP RECRUITER</h3>
           <h5>RECENT UPDATES</h5>
           {currentJobs.map((job, index) => (
             <div className="company-details" key={index}>

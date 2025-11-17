@@ -88,6 +88,10 @@
   padding-bottom: 40px;
 }
 
+h3 {
+  margin: 5%;
+}
+
 h3::before {
   content: "";
   background-image: linear-gradient(to right, #6bd9ef, #7ce08a);
@@ -96,6 +100,7 @@ h3::before {
   position: absolute;
   z-index: -10;
   margin-top: -15px;
+
   border-top-left-radius: 70px;
   border-bottom-right-radius: 90px;
 }
