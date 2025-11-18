@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 import ContactUs from "./components/contactus/contactus";
 import Signin from "./components/signin/signin";
 import Signup from "./components/signin/sigup";
+import Profilebuilder from "./components/profilebuilder/Profilebuilder";
 import "./App.css";
 
 function Layout({ children }) {
@@ -20,7 +21,9 @@ function Layout({ children }) {
 
   // hide navbar & footer only on /signin page
   const hideLayout =
-    location.pathname === "/signin" || location.pathname === "/signup";
+    location.pathname === "/signin" ||
+    location.pathname === "/signup" ||
+    location.pathname === "/profilebuilder";
 
   return (
     <>
@@ -58,6 +61,7 @@ function App() {
           {/* Signin Page — only Signin appears */}
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/profilebuilder" element={<Profilebuilder />} />
         </Routes>
       </Layout>
     </Router>
