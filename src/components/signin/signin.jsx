@@ -7,17 +7,15 @@ const Signin = () => {
       className="d-flex justify-content-center align-items-center"
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #6C63FF, #48C6EF)",
         padding: "20px",
       }}
     >
       <div
-        className="card p-4 shadow"
+        className="shadow p-4"
         style={{
           width: "100%",
           maxWidth: "400px",
           borderRadius: "12px",
-          backgroundColor: "#fff",
         }}
       >
         <h3 className="text-center mb-4" style={{ color: "#333" }}>
