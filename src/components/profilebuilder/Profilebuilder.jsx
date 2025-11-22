@@ -13,8 +13,9 @@ const Profilebuilder = () => {
         className="shadow p-4"
         style={{
           width: "100%",
-          maxWidth: "450px",
+          maxWidth: "900px", // ⬅⬅ WIDE WIDTH
           borderRadius: "12px",
+          background: "white",
         }}
       >
         <h3 className="text-center mb-4" style={{ color: "#333" }}>
@@ -42,39 +43,168 @@ const Profilebuilder = () => {
               Personal Information
             </legend>
 
-            {/* Name */}
-            <div className="mb-3">
-              <label htmlFor="name" style={{ fontSize: "14px", color: "#444" }}>
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="form-control"
-                placeholder="Enter your name"
-                required
-              />
+            <div className="row">
+              {/* Name */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="name"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="form-control"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+
+              {/* Father Name */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="fname"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Father Name
+                </label>
+                <input
+                  type="text"
+                  id="fname"
+                  className="form-control"
+                  placeholder="Enter father name"
+                  required
+                />
+              </div>
+
+              {/* DOB */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="dob"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Date of Birth
+                </label>
+                <input type="date" id="dob" className="form-control" required />
+              </div>
+
+              {/* Gender */}
+              <div className="mb-3 col-md-6">
+                <label style={{ fontSize: "14px", color: "#444" }}>
+                  Gender
+                </label>
+                <select className="form-control" required>
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              {/* CNIC */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="cnic"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  CNIC
+                </label>
+                <input
+                  type="text"
+                  id="cnic"
+                  className="form-control"
+                  placeholder="12345-1234567-1"
+                  required
+                />
+              </div>
+
+              {/* Phone */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="phone"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Phone Number
+                </label>
+                <input
+                  type="text"
+                  id="phone"
+                  className="form-control"
+                  placeholder="03xx-xxxxxxx"
+                  required
+                />
+              </div>
+
+              {/* Email */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="email"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="form-control"
+                  placeholder="Enter email"
+                />
+              </div>
+
+              {/* City */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="city"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  City
+                </label>
+                <input
+                  type="text"
+                  id="city"
+                  className="form-control"
+                  placeholder="Enter city"
+                />
+              </div>
+
+              {/* Country */}
+              <div className="mb-3 col-md-6">
+                <label
+                  htmlFor="country"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Country
+                </label>
+                <input
+                  type="text"
+                  id="country"
+                  className="form-control"
+                  placeholder="Enter country"
+                />
+              </div>
+
+              {/* Address */}
+              <div className="mb-3 col-12">
+                <label
+                  htmlFor="address"
+                  style={{ fontSize: "14px", color: "#444" }}
+                >
+                  Address
+                </label>
+                <textarea
+                  id="address"
+                  className="form-control"
+                  placeholder="Enter full address"
+                  rows="3"
+                ></textarea>
+              </div>
             </div>
 
-            {/* CNIC */}
-            <div className="mb-3">
-              <label htmlFor="cnic" style={{ fontSize: "14px", color: "#444" }}>
-                CNIC
-              </label>
-              <input
-                type="text"
-                id="cnic"
-                name="cnic"
-                className="form-control"
-                placeholder="Enter CNIC"
-                required
-              />
-            </div>
-
+            {/* Submit */}
             <button
               type="submit"
-              className="btn btn-primary w-100"
+              className="btn btn-primary w-100 mt-3"
               style={{ backgroundColor: "#6C63FF", border: "none" }}
             >
               Save Profile
