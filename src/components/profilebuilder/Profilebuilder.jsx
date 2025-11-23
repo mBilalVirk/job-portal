@@ -31,6 +31,7 @@ const Profilebuilder = () => {
             margin: "auto",
             marginRight: "0",
             backgroundColor: "#6C63FF",
+            color: "white",
           }}
           className="btn bt-primary mb-4"
           onClick={goToHome}
