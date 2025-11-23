@@ -1,6 +1,10 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Profilebuilder = () => {
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate("/");
+  };
   return (
     <div
       className="d-flex justify-content-center align-items-center"
@@ -15,13 +19,24 @@ const Profilebuilder = () => {
           width: "100%",
           maxWidth: "900px", // ⬅⬅ WIDE WIDTH
           borderRadius: "12px",
-          background: "white",
         }}
       >
         <h3 className="text-center mb-4" style={{ color: "#333" }}>
           Profile Builder
         </h3>
-
+        <button
+          type="button"
+          style={{
+            display: "flex",
+            margin: "auto",
+            marginRight: "0",
+            backgroundColor: "#6C63FF",
+          }}
+          className="btn bt-primary mb-4"
+          onClick={goToHome}
+        >
+          Home
+        </button>
         <form id="profile-form">
           <fieldset
             style={{
