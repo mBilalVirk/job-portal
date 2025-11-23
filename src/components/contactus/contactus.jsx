@@ -4,7 +4,7 @@ import "./contactus.css";
 const contactus = () => {
   return (
     <div className="container">
-      <section id="contactus-section">
+      <section id="contactus-section" className=" shadow p-4">
         <div className="row">
           <h3>Contact Us</h3>
         </div>
